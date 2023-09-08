@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import Greeting from "./Components/Greeting";
+import { Route, Routes } from 'react-router-dom';
+import Greeting from './Components/Greeting';
 
 function App() {
   return (
