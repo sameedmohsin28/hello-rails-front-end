@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { fetchGreeting } from '../Redux/greeting/greetingsSlice';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux'
 
 function Greeting() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(fetchGreeting());
+  }, [dispatch])
+
+  const displayGreeting = useSelector((store) => (store.greeting.randomGreeting))
+
   return (
-    <div>Greeting12234</div>
+    <>
+      <h1>This is a random greeting</h1>
+      <div>{displayGreeting}</div>
+    </>
   )
 }
 
