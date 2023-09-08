@@ -1,8 +1,11 @@
+import { Route, Routes } from "react-router-dom";
+import Greeting from "./Components/Greeting";
+
 function App() {
   return (
-    <div className="App">
-      Hi
-    </div>
+    <Routes>
+      <Route path="/" element={<Greeting />} />
+    </Routes>
   );
 }
 
