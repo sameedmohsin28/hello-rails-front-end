@@ -24,7 +24,8 @@
 
 ## 🛠 Back End Repo <a name="back-end-repo"></a>
 
-To see the back end repo of this project, visit [Hello Rails Back End](https://github.com/sameedmohsin28/hello-rails-back-end)
+To see the back end repo of this project, visit [Hello Rails Back End](https://github.com/sameedmohsin28/hello-rails-back-end).
+View the [Pull Request](https://github.com/sameedmohsin28/hello-rails-back-end/pull/1) of the backend repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
