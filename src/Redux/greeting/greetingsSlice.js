@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchGreeting = createAsyncThunk('greeting/fetchGreeting', async () => {
   const API_URL = 'http://127.0.0.1:3000/api/greetings/index';
   const response = await axios.get(API_URL);
-  const response2 = response.json();
+  const response2 = response.data;
   return response2;
 });
 
@@ -20,7 +20,7 @@ const greetingSlice = createSlice({
     builder
       .addCase(fetchGreeting.fulfilled, (state, action) => ({
         ...state,
-        randomGreeting: action.payload,
+        randomGreeting: action.payload.greeting_message,
       }));
   },
 });
